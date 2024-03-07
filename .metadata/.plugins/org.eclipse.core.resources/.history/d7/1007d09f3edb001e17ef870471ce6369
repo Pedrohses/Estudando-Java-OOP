@@ -1,0 +1,43 @@
+package matrizes;
+
+import java.util.Scanner;
+
+public class matrizes {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int left;
+		int right;
+		int down;
+		int up;
+		
+		System.out.println("Digite o número de linhas");
+		int n = sc.nextInt();
+		System.out.println("Digite o número de colunas");
+		int m = sc.nextInt();
+		
+		int[][] matriz = new int[n][m];
+		
+		for (int i = 0; i < matriz.length ; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		System.out.println("Digite um número da matriz");
+		int numDigitado = sc.nextInt();
+		
+		for (int i = 0; i < matriz.length ; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (numDigitado == matriz[i][j]) {
+					System.out.println("Position: ");
+					System.out.println(i + j + " ");
+				}	
+			}
+		}
+		
+		sc.close();
+	}
+
+}

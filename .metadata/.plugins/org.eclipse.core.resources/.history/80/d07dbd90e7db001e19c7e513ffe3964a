@@ -1,0 +1,10 @@
+package dataHora;
+
+public class ConvertendoDataHoraGolbalParaLocal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
