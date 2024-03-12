@@ -1,4 +1,4 @@
-package entiites;
+package entities;
 
 public class Comment {
 	
