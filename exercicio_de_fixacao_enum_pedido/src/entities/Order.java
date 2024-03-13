@@ -74,7 +74,9 @@ public class Order {
 		sb.append("Order status: " + status + "\n");
 		sb.append(client + "\n");
 		sb.append("Order items: \n");
-		sb.append(items + "\n");
+		for (OrderItem item : items) {
+			sb.append(item + "\n");
+		}
 		sb.append("Total price: $" + total());
 		return sb.toString();
 	}
