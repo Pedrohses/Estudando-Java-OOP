@@ -66,12 +66,12 @@ public class Program {
 				break;
 			}
 		}
-		
+
 		System.out.println("PRICE TAGS:");
 		for (Product product : products) {
 			System.out.println(product.priceTag());
 		}
-		
+
 		sc.close();
 	}
 }
