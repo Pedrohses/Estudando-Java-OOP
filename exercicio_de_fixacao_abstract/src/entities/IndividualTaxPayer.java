@@ -3,7 +3,7 @@ package entities;
 public final class IndividualTaxPayer extends TaxPayer {
 
 	private Double expendituresHealth;
-	
+
 	public IndividualTaxPayer() {
 		super();
 	}
@@ -25,7 +25,7 @@ public final class IndividualTaxPayer extends TaxPayer {
 	public Double taxes() {
 		if (anualIncome < 20000.0) {
 			return (anualIncome * 0.15) - (expendituresHealth * 0.5);
-		} 
+		}
 		return (anualIncome * 0.25) - (expendituresHealth * 0.5);
 	}
 }

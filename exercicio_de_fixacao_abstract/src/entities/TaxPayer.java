@@ -1,10 +1,10 @@
 package entities;
 
 public abstract class TaxPayer {
-	
+
 	protected String name;
 	protected Double anualIncome;
-	
+
 	public TaxPayer() {
 	}
 
@@ -28,9 +28,9 @@ public abstract class TaxPayer {
 	public void setAnualIncome(Double anualIncome) {
 		this.anualIncome = anualIncome;
 	}
-	
+
 	public abstract Double taxes();
-	
+
 	public String toString() {
 		return name + ": $ " + String.format("%.2f", taxes());
 	}

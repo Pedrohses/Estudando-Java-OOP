@@ -32,4 +32,6 @@
     <fullyQualifiedTypeName name="entities.Rectangle"/>
     <fullyQualifiedTypeName name="entities.enums.Color"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="entities.IndividualTaxPayer"/>
+    <fullyQualifiedTypeName name="entities.CompanyTaxPayer"/>
 </qualifiedTypeNameHistroy>

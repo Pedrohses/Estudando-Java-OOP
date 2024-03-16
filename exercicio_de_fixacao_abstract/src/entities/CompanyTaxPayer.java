@@ -25,8 +25,7 @@ public final class CompanyTaxPayer extends TaxPayer {
 	public Double taxes() {
 		if (employeeNumber > 10) {
 			return anualIncome * 0.14;
-		} 
-		return anualIncome * 0.16;	
+		}
+		return anualIncome * 0.16;
 	}
-
 }
