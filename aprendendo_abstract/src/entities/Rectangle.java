@@ -4,8 +4,8 @@ import entities.enums.Color;
 
 public class Rectangle extends Shape {
 	
-	Double width;
-	Double height;
+	private Double width;
+	private Double height;
 	
 	public Rectangle() {
 	}

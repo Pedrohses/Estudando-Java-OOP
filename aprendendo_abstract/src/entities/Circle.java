@@ -4,7 +4,7 @@ import entities.enums.Color;
 
 public class Circle extends Shape{
 	
-	Double radius;
+	private Double radius;
 	
 	public Circle() {
 	}
