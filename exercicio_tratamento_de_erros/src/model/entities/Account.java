@@ -47,16 +47,20 @@ public class Account {
 		balance += amount;
 	}
 
-	public void wihdraw(Double amount) throws DomainException {
+	public void wihdraw(Double amount) {
+		error(amount);
+		balance -= amount;
+	}
+
+	public void error(Double amount) {
 		if (amount > withdrawLimit) {
 			throw new DomainException("The amount exceeds withdraw limit");
 		}
 		if (amount > balance) {
 			throw new DomainException("Not enough balance");
 		}
-		balance -= amount;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "New balance: " + String.format("%.2f", balance);
