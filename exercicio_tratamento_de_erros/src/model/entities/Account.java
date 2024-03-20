@@ -60,7 +60,7 @@ public class Account {
 			throw new DomainException("Not enough balance");
 		}
 	}
-	
+
 	@Override
 	public String toString() {
 		return "New balance: " + String.format("%.2f", balance);

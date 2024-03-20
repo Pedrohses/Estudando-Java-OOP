@@ -33,7 +33,6 @@ public class Program {
 		try {
 			account.wihdraw(withdraw);
 			System.out.println(account);
-			
 		} catch (DomainException e) {
 			System.out.println("Withdraw error: " + e.getMessage());
 		} catch (RuntimeException e) {
